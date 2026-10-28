@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fede Fernandez Olivero | Consulente in Sviluppo Organizzativo</title>
+  <meta name="description" content="Consulente in sviluppo organizzativo e leadership esecutiva, basato a Milano. Aiuto CEO, fondatori e HR leader a costruire organizzazioni più efficaci.">
+  <meta name="author" content="Fede Fernandez Olivero">
+  <link rel="canonical" href="https://www.fedefernandezolivero.com/it/">
+  <link rel="alternate" hreflang="en" href="https://www.fedefernandezolivero.com/">
+  <link rel="alternate" hreflang="es" href="https://www.fedefernandezolivero.com/es/">
+  <link rel="alternate" hreflang="it" href="https://www.fedefernandezolivero.com/it/">
+  <link rel="alternate" hreflang="x-default" href="https://www.fedefernandezolivero.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.fedefernandezolivero.com/it/">
+  <meta property="og:title" content="Fede Fernandez Olivero | Consulente in Sviluppo Organizzativo">
+  <meta property="og:description" content="Consulente in sviluppo organizzativo e leadership esecutiva, basato a Milano.">
+  <meta property="og:image" content="https://www.fedefernandezolivero.com/assets/img/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fede Fernandez Olivero",
+    "jobTitle": "Consulente in Sviluppo Organizzativo e Leadership Esecutiva",
+    "url": "https://www.fedefernandezolivero.com",
+    "email": "fede@fedefernandezolivero.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Milano", "addressCountry": "IT" },
+    "knowsLanguage": ["en", "es", "it"],
+    "sameAs": ["https://www.linkedin.com/in/fedefernandezolivero/"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink:       #0a0d12;
+      --ink-2:     #10141c;
+      --ink-3:     #161b26;
+      --rule:      rgba(255,255,255,0.08);
+      --rule-mid:  rgba(255,255,255,0.14);
+      --text:      #dde3ee;
+      --text-2:    #96a2b5;
+      --text-3:    #5a6478;
+      --accent:    #2fa8c0;
+      --white:     #ffffff;
+      --nav-h:     68px;
+      --ease:      cubic-bezier(0.4,0,0.2,1);
+      --ease-out:  cubic-bezier(0,0,0.2,1);
+      --r:         8px;
+      --r-lg:      16px;
+      --font-sans: 'Sora', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; font-size: 16px; }
+    body { background: var(--ink); color: var(--text); font-family: var(--font-body); line-height: 1.65; overflow-x: hidden; }
+    img  { display: block; max-width: 100%; }
+    a    { color: inherit; text-decoration: none; }
+    button { font-family: inherit; border: 0; background: none; cursor: pointer; }
+    ul   { list-style: none; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+    h1,h2,h3,h4 { font-family: var(--font-sans); line-height: 1.12; letter-spacing: -.025em; font-weight: 600; }
+    h1 { font-size: clamp(2.6rem,5.5vw,5rem); font-weight: 700; letter-spacing: -.035em; }
+    h2 { font-size: clamp(1.9rem,3.5vw,3rem); }
+    h3 { font-size: clamp(1.1rem,1.8vw,1.35rem); letter-spacing: -.015em; }
+    p  { color: var(--text-2); font-size: 1.0625rem; line-height: 1.8; }
+    p + p { margin-top: 1rem; }
+    .label { font-family: var(--font-sans); font-size: .7rem; font-weight: 500; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); }
+    .wrap     { max-width: 1180px; margin: 0 auto; padding: 0 clamp(1.25rem,4vw,2.75rem); }
+    .sec      { padding: clamp(4.5rem,9vw,8.5rem) 0; }
+    .sec-alt  { background: var(--ink-2); }
+    .skip { position: fixed; top: -100%; left: 1rem; z-index: 9999; background: var(--accent); color: #fff; padding: .6rem 1.2rem; border-radius: 0 0 var(--r) var(--r); font-size: .875rem; }
+    .skip:focus { top: 0; }
+    .btn { display: inline-flex; align-items: center; gap: 7px; padding: .75rem 1.65rem; font-family: var(--font-sans); font-size: .875rem; font-weight: 500; border-radius: 50px; transition: all .22s var(--ease); white-space: nowrap; }
+    .btn-solid   { background: var(--white); color: var(--ink); }
+    .btn-solid:hover { background: #e8edf5; transform: translateY(-1px); }
+    .btn-outline { border: 1px solid var(--rule-mid); color: var(--text); }
+    .btn-outline:hover { border-color: rgba(255,255,255,.3); color: var(--white); transform: translateY(-1px); }
+    .btn-accent  { background: var(--accent); color: var(--white); }
+    .btn-accent:hover { background: #28939a; transform: translateY(-1px); }
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--nav-h); display: flex; align-items: center; }
+    #nav.scrolled { background: rgba(10,13,18,.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--rule); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 1.5rem; }
+    .nav-logo img { height: 32px; width: auto; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; font-family: var(--font-sans); font-size: .8125rem; color: var(--text-2); }
+    .nav-links a { transition: color .2s; }
+    .nav-links a:hover { color: var(--text); }
+    .nav-end { display: flex; align-items: center; gap: 1rem; }
+    .nav-end .btn { padding: .55rem 1.25rem; font-size: .8125rem; }
+    .lang-sw { display: flex; align-items: center; gap: 0; font-family: var(--font-sans); font-size: .7rem; font-weight: 500; letter-spacing: .06em; }
+    .lang-sw a { color: var(--text-3); padding: .25rem .4rem; border-radius: 3px; transition: color .2s; }
+    .lang-sw a:hover { color: var(--text-2); }
+    .lang-sw a[aria-current="true"] { color: var(--accent); }
+    .lang-sw span { color: var(--text-3); }
+    @media (max-width: 820px) { .nav-links { display: none; } }
+    @media (max-width: 480px) { .lang-sw span { display: none; } }
+    #hero { position: relative; min-height: 100svh; display: grid; grid-template-columns: 1fr 1fr; align-items: end; overflow: hidden; }
+    .hero-photo { position: absolute; right: 0; top: 0; bottom: 0; width: 55%; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
+    .hero-photo::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, var(--ink) 0%, rgba(10,13,18,.55) 60%, rgba(10,13,18,.1) 100%); z-index: 1; }
+    .hero-photo::after  { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 40%; background: linear-gradient(to top, var(--ink) 0%, transparent 100%); z-index: 1; }
+    .hero-content { position: relative; z-index: 2; padding-top: calc(var(--nav-h) + 4rem); padding-bottom: clamp(3.5rem,7vw,6rem); max-width: 620px; }
+    .hero-tag { margin-bottom: 2rem; }
+    .hero-tag span { display: inline-flex; align-items: center; gap: .6rem; font-family: var(--font-sans); font-size: .7rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); border: 1px solid var(--rule-mid); border-radius: 50px; padding: .35rem 1rem; }
+    .hero-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    #hero h1 { color: var(--white); margin-bottom: 1.5rem; }
+    #hero h1 em { font-style: normal; display: block; color: var(--text-2); font-weight: 300; }
+    .hero-desc { font-size: clamp(1rem,1.6vw,1.15rem); color: var(--text-2); max-width: 480px; line-height: 1.8; margin-bottom: 2.5rem; }
+    .hero-actions { display: flex; gap: .875rem; flex-wrap: wrap; }
+    @media (max-width: 860px) {
+      #hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-photo { position: relative; width: 100%; height: 62vw; max-height: 440px; }
+      .hero-photo::before { background: linear-gradient(to top, var(--ink) 0%, rgba(10,13,18,.25) 100%); }
+      .hero-content { padding-top: 2.5rem; max-width: 100%; }
+    }
+    .ticker { overflow: hidden; padding: 1rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+    .ticker-track { display: flex; animation: tick 32s linear infinite; white-space: nowrap; }
+    .ticker-track:hover { animation-play-state: paused; }
+    .ticker-item { display: inline-flex; align-items: center; gap: 1.75rem; padding-right: 1.75rem; font-family: var(--font-sans); font-size: .675rem; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); }
+    .t-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    @keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .persp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,7vw,7rem); align-items: start; }
+    .persp-left .label { margin-bottom: 1.5rem; display: block; }
+    .persp-left h2 { color: var(--white); margin-bottom: 1.75rem; }
+    .persp-left p { font-size: 1.075rem; }
+    .persp-right { padding-top: .5rem; }
+    .persp-pull { font-family: var(--font-sans); font-size: clamp(1.15rem,2vw,1.55rem); font-weight: 400; color: var(--white); line-height: 1.45; letter-spacing: -.02em; border-left: 2px solid var(--accent); padding-left: 1.5rem; margin-bottom: 2.5rem; }
+    .persp-pull em { font-style: italic; color: var(--text-2); }
+    .persp-note { font-size: .9375rem; color: var(--text-2); line-height: 1.8; }
+    .persp-situations { margin-top: 1.5rem; display: flex; flex-direction: column; gap: .625rem; }
+    .persp-sit { display: flex; gap: .75rem; align-items: flex-start; font-size: .9rem; color: var(--text-2); line-height: 1.6; }
+    .persp-sit::before { content: '—'; color: var(--accent); flex-shrink: 0; margin-top: .05rem; }
+    @media (max-width: 760px) { .persp-grid { grid-template-columns: 1fr; } }
+    .exp-header { max-width: 600px; margin-bottom: 3.5rem; }
+    .exp-header .label { display: block; margin-bottom: 1.25rem; }
+    .exp-header h2 { color: var(--white); margin-bottom: 1rem; }
+    .exp-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; background: var(--rule); }
+    .exp-cell { background: var(--ink-2); padding: clamp(1.75rem,4vw,2.75rem); transition: background .25s; }
+    .exp-cell:hover { background: #12171f; }
+    .exp-n { font-family: var(--font-sans); font-size: .675rem; color: var(--text-3); letter-spacing: .08em; margin-bottom: 1.5rem; }
+    .exp-cell h3 { color: var(--white); margin-bottom: .875rem; }
+    .exp-cell > p { font-size: .9375rem; margin-bottom: 1.5rem; }
+    .exp-more { border-top: 1px solid var(--rule); }
+    .exp-q { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: .875rem 0; text-align: left; font-family: var(--font-sans); font-size: .8rem; font-weight: 400; color: var(--text-2); transition: color .2s; border-bottom: 1px solid var(--rule); }
+    .exp-q:last-of-type { border-bottom: 0; }
+    .exp-q:hover { color: var(--text); }
+    .exp-q[aria-expanded="true"] { color: var(--accent); }
+    .exp-q-icon { width: 14px; height: 14px; flex-shrink: 0; position: relative; }
+    .exp-q-icon::before,.exp-q-icon::after { content: ''; position: absolute; background: currentColor; border-radius: 1px; transition: transform .3s var(--ease), opacity .3s; }
+    .exp-q-icon::before { width: 10px; height: 1px; top: 50%; left: 2px; transform: translateY(-50%); }
+    .exp-q-icon::after  { width: 1px; height: 10px; left: 6.5px; top: 2px; }
+    .exp-q[aria-expanded="true"] .exp-q-icon::after { transform: rotate(90deg); opacity: 0; }
+    .exp-ans { overflow: hidden; }
+    .exp-ans[hidden] { display: none; }
+    .exp-ans-inner { padding: .75rem 0 1rem; font-size: .875rem; color: var(--text-2); line-height: 1.8; }
+    @media (max-width: 680px) { .exp-grid { grid-template-columns: 1fr; } }
+    .appr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,7vw,7rem); align-items: center; }
+    .appr-img { border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4/3; }
+    .appr-img img { width: 100%; height: 100%; object-fit: cover; }
+    .appr-content .label { display: block; margin-bottom: 1.25rem; }
+    .appr-content h2 { color: var(--white); margin-bottom: 1.25rem; }
+    .appr-content > p { margin-bottom: 2rem; }
+    .steps { display: flex; flex-direction: column; gap: 1.125rem; }
+    .step { display: flex; gap: 1.25rem; }
+    .step-n { font-family: var(--font-sans); font-size: .675rem; color: var(--accent); letter-spacing: .06em; margin-top: .2rem; flex-shrink: 0; width: 2rem; }
+    .step-body strong { display: block; font-family: var(--font-sans); font-size: .9375rem; font-weight: 500; color: var(--text); margin-bottom: .25rem; }
+    .step-body span { font-size: .875rem; color: var(--text-2); line-height: 1.75; }
+    @media (max-width: 760px) { .appr-grid { grid-template-columns: 1fr; } }
+    .abt-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(3rem,7vw,7rem); align-items: start; }
+    .abt-img { border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 3/4; }
+    .abt-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .abt-content .label { display: block; margin-bottom: 1.25rem; }
+    .abt-content h2 { color: var(--white); margin-bottom: .625rem; }
+    .abt-subtitle { font-style: italic; font-size: 1.075rem; color: var(--text-2); font-weight: 300; margin-bottom: 1.75rem; line-height: 1.55; }
+    .abt-content p { font-size: 1rem; }
+    .creds { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; margin-top: 1.75rem; }
+    .cred { display: flex; align-items: flex-start; gap: .625rem; padding: .875rem 1rem; background: var(--ink-3); border: 1px solid var(--rule); border-radius: var(--r); }
+    .cred-dash { width: 14px; height: 1px; background: var(--accent); flex-shrink: 0; margin-top: .625rem; }
+    .cred span { font-size: .8125rem; color: var(--text-2); line-height: 1.5; }
+    @media (max-width: 760px) { .abt-grid { grid-template-columns: 1fr; } .creds { grid-template-columns: 1fr; } }
+    .nl-editorial { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,6vw,6rem); align-items: center; }
+    .nl-left .label { display: block; margin-bottom: 1.25rem; }
+    .nl-left h2 { color: var(--white); margin-bottom: 1.25rem; font-size: clamp(1.75rem,3vw,2.5rem); }
+    .nl-left p { margin-bottom: 2rem; }
+    .nl-right { border: 1px solid var(--rule-mid); border-radius: var(--r-lg); padding: clamp(2rem,4vw,3rem); position: relative; overflow: hidden; }
+    .nl-right::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--accent), transparent); }
+    .nl-pub-label { font-family: var(--font-sans); font-size: .65rem; letter-spacing: .16em; text-transform: uppercase; color: var(--text-3); margin-bottom: 1.25rem; }
+    .nl-title { font-family: var(--font-sans); font-size: clamp(1.4rem,2.5vw,2rem); font-weight: 600; color: var(--white); line-height: 1.2; letter-spacing: -.02em; margin-bottom: 1.25rem; }
+    .nl-title em { font-style: normal; color: var(--accent); }
+    .nl-desc { font-size: .9375rem; color: var(--text-2); line-height: 1.8; margin-bottom: 2rem; }
+    @media (max-width: 760px) { .nl-editorial { grid-template-columns: 1fr; } }
+    .ct-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,7vw,7rem); align-items: start; }
+    .ct-left .label { display: block; margin-bottom: 1.25rem; }
+    .ct-left h2 { color: var(--white); margin-bottom: 1.25rem; }
+    .ct-left p { margin-bottom: 2rem; }
+    .ct-book { border: 1px solid var(--rule-mid); border-radius: var(--r-lg); padding: clamp(1.75rem,3.5vw,2.5rem); margin-bottom: 1.5rem; text-align: center; }
+    .ct-book p { font-size: .9375rem; max-width: 320px; margin: 0 auto 1.75rem; line-height: 1.75; }
+    .ct-channels { display: flex; flex-direction: column; gap: .625rem; }
+    .ct-ch { display: flex; align-items: center; gap: 1rem; padding: 1.125rem 1.375rem; background: var(--ink-3); border: 1px solid var(--rule); border-radius: var(--r); transition: border-color .2s, transform .2s; }
+    .ct-ch:hover { border-color: var(--rule-mid); transform: translateX(3px); }
+    .ct-ch-ic { width: 36px; height: 36px; flex-shrink: 0; border-radius: var(--r); background: rgba(47,168,192,.08); display: flex; align-items: center; justify-content: center; }
+    .ct-ch-ic svg { width: 16px; height: 16px; stroke: var(--accent); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .ct-ch-l { font-size: .7rem; color: var(--text-3); letter-spacing: .06em; text-transform: uppercase; font-family: var(--font-sans); }
+    .ct-ch-v { font-size: .9rem; color: var(--text); font-weight: 500; }
+    @media (max-width: 760px) { .ct-grid { grid-template-columns: 1fr; } }
+    footer { border-top: 1px solid var(--rule); padding: 2.25rem 0; }
+    .ft-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.25rem; }
+    .ft-logo img { height: 26px; opacity: .5; transition: opacity .2s; }
+    .ft-logo:hover img { opacity: .75; }
+    .ft-copy { font-size: .8rem; color: var(--text-3); }
+    .ft-links { display: flex; gap: 1.5rem; }
+    .ft-links a { font-size: .8rem; color: var(--text-3); transition: color .2s; }
+    .ft-links a:hover { color: var(--text-2); }
+    .js-ready .rv { opacity: 0; transform: translateY(22px); transition: opacity .6s var(--ease-out), transform .6s var(--ease-out); }
+    .js-ready .rv.in { opacity: 1; transform: none; }
+    .js-ready .rv-d1 { transition-delay: .1s; }
+    .js-ready .rv-d2 { transition-delay: .2s; }
+    .js-ready .rv-d3 { transition-delay: .3s; }
+    @media (prefers-reduced-motion: reduce) {
+      .js-ready .rv { opacity: 1; transform: none; transition: none; }
+      .ticker-track { animation: none; }
+    }
+  </style>
+</head>
+<body>
+<a href="#main" class="skip">Vai al contenuto principale</a>
+
+<nav id="nav" role="navigation" aria-label="Navigazione principale">
+  <div class="wrap nav-inner">
+    <a href="/it/" class="nav-logo" aria-label="Fede Fernandez Olivero — home">
+      <img src="../assets/img/logo-full-white.png" alt="FFO" width="128" height="32">
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#approach">Metodo</a></li>
+      <li><a href="#about">Chi sono</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+    </ul>
+    <div class="nav-end">
+      <nav class="lang-sw" aria-label="Lingua">
+        <a href="/" hreflang="en">EN</a>
+        <span aria-hidden="true"> | </span>
+        <a href="/es/" hreflang="es">ES</a>
+        <span aria-hidden="true"> | </span>
+        <a href="/it/" hreflang="it" aria-current="true">IT</a>
+      </nav>
+      <a href="https://calendar.app.google/ytrUcxttoiVHuxEVA" target="_blank" rel="noopener noreferrer" class="btn btn-solid">Prenota una call</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section id="hero" aria-label="Introduzione">
+  <div class="hero-content wrap">
+    <div class="hero-tag">
+      <span><span class="hero-dot" aria-hidden="true"></span>Milano, Italia · Sviluppo Organizzativo</span>
+    </div>
+    <h1>Organizzazioni migliori.<br><em>Per scelta.</em></h1>
+    <p class="hero-desc">Lavoro con CEO, fondatori e HR leader per costruire organizzazioni in cui leadership, struttura e cultura operino insieme per generare risultati concreti.</p>
+    <div class="hero-actions">
+      <a href="https://calendar.app.google/ytrUcxttoiVHuxEVA" target="_blank" rel="noopener noreferrer" class="btn btn-solid">
+        Prenota una call
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+      </a>
+      <a href="#expertise" class="btn btn-outline">Scopri il mio lavoro</a>
+    </div>
+  </div>
+  <div class="hero-photo" aria-hidden="true">
+    <img src="../assets/img/hero.jpg" alt="" fetchpriority="high">
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">Sviluppo Organizzativo <span class="t-dot"></span></span>
+    <span class="ticker-item">Leadership Esecutiva <span class="t-dot"></span></span>
+    <span class="ticker-item">Cultura e Cambiamento <span class="t-dot"></span></span>
+    <span class="ticker-item">Executive Coaching <span class="t-dot"></span></span>
+    <span class="ticker-item">Programmi di Leadership <span class="t-dot"></span></span>
+    <span class="ticker-item">Progettazione Organizzativa <span class="t-dot"></span></span>
+    <span class="ticker-item">Consulenza Strategica <span class="t-dot"></span></span>
+    <span class="ticker-item">Efficacia dei Team <span class="t-dot"></span></span>
+    <span class="ticker-item">Sviluppo Organizzativo <span class="t-dot"></span></span>
+    <span class="ticker-item">Leadership Esecutiva <span class="t-dot"></span></span>
+    <span class="ticker-item">Cultura e Cambiamento <span class="t-dot"></span></span>
+    <span class="ticker-item">Executive Coaching <span class="t-dot"></span></span>
+    <span class="ticker-item">Programmi di Leadership <span class="t-dot"></span></span>
+    <span class="ticker-item">Progettazione Organizzativa <span class="t-dot"></span></span>
+    <span class="ticker-item">Consulenza Strategica <span class="t-dot"></span></span>
+    <span class="ticker-item">Efficacia dei Team <span class="t-dot"></span></span>
+  </div>
+</div>
+
+<!-- PROSPETTIVA -->
+<section id="perspective" class="sec">
+  <div class="wrap">
+    <div class="persp-grid">
+      <div class="rv">
+        <span class="label">Un punto di vista</span>
+        <h2 style="color:var(--white); margin-bottom:1.75rem;">La maggior parte dei problemi organizzativi non sono problemi di talento.</h2>
+        <p>Le persone non rendono male nel vuoto. Rendono male dentro strutture che rendono difficile lavorare bene: dove i ruoli non sono chiari, l'accountability è disomogenea e i comportamenti di leadership non rispecchiano quello che la strategia richiede.</p>
+        <p style="margin-top:1rem;">Il mio lavoro parte da qui. Capire il sistema prima di prescrivere qualsiasi cosa. Migliorare le condizioni, non solo sviluppare le persone che ci operano dentro.</p>
+      </div>
+      <div class="rv rv-d2">
+        <p class="persp-pull">"La maggior parte delle aziende non mancano di strategie ambiziose.<br>Mancano di organizzazioni capaci di eseguirle."<br><em>In quel divario lavoro io.</em></p>
+        <p class="persp-note">Ho trascorso oltre 15 anni all'intersezione tra performance aziendale e sviluppo delle persone: in HR aziendale, come consulente esterno, come executive coach e come docente universitario. Quello che trovo costantemente: la strategia si inceppa nel modello operativo, non nel consiglio di amministrazione.</p>
+        <div class="persp-situations" aria-label="Situazioni frequenti">
+          <div class="persp-sit">Un'azienda cresce più in fretta di quanto la sua struttura decisionale riesca a reggere.</div>
+          <div class="persp-sit">Un team direttivo capace fatica ad allinearsi sulle priorità.</div>
+          <div class="persp-sit">Una cultura che funzionava a 50 persone diventa difficile da sostenere a 300.</div>
+          <div class="persp-sit">La strategia è chiara, ma l'esecuzione si inceppa tra i team.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise" class="sec sec-alt" style="padding-top:0;">
+  <div class="wrap">
+    <div class="exp-header rv">
+      <span class="label">Expertise</span>
+      <h2>Quattro aree. Un solo obiettivo.</h2>
+      <p>Non sono quattro servizi separati. Sono quattro modi di affrontare la stessa sfida di fondo: costruire organizzazioni capaci di fare ciò che si propongono.</p>
+    </div>
+    <div class="exp-grid rv rv-d1">
+
+      <div class="exp-cell">
+        <div class="exp-n">01</div>
+        <h3>Sviluppo Organizzativo</h3>
+        <p>Aiuto le aziende a migliorare come si definiscono le responsabilità, si prendono le decisioni e collaborano i team — perché la struttura supporti la strategia invece di ostacolarla.</p>
+        <div class="exp-more">
+          <button class="exp-q" id="exp-q-1a" aria-expanded="false" aria-controls="exp-a-1a">
+            Come si traduce nella pratica
+            <span class="exp-q-icon" aria-hidden="true"></span>
+          </button>
+          <div class="exp-ans" id="exp-a-1a" role="region" aria-labelledby="exp-q-1a" hidden>
+            <div class="exp-ans-inner">Chiarimento di ruoli e diritti decisionali. Ridisegno di come i team collaborano. Identificazione di dove il modello operativo genera attrito. Sviluppo di capacità organizzativa interna per sostenere il cambiamento dopo la fine del progetto.</div>
+          </div>
+          <button class="exp-q" id="exp-q-1b" aria-expanded="false" aria-controls="exp-a-1b">
+            A chi è rivolto
+            <span class="exp-q-icon" aria-hidden="true"></span>
+          </button>
+          <div class="exp-ans" id="exp-a-1b" role="region" aria-labelledby="exp-q-1b" hidden>
+            <div class="exp-ans-inner">CEO e fondatori che gestiscono crescita rapida o integrazioni post-acquisizione. Organizzazioni dove la strategia continua a incepparsi in fase di esecuzione. HR leader che hanno bisogno di una prospettiva esterna credibile su problemi strutturali.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-cell">
+        <div class="exp-n">02</div>
+        <h3>Leadership Esecutiva</h3>
+        <p>Rafforzare le competenze di leadership che guidano la performance organizzativa — non con programmi generici, ma lavorando sui comportamenti specifici che contano per questa azienda, adesso.</p>
+        <div class="exp-more">
+          <button class="exp-q" id="exp-q-2a" aria-expanded="false" aria-controls="exp-a-2a">
+            Come si traduce nella pratica
+            <span class="exp-q-icon" aria-hidden="true"></span>
+          </button>
+          <div class="exp-ans" id="exp-a-2a" role="region" aria-labelledby="exp-q-2a" hidden>
+            <div class="exp-ans-inner">Programmi di sviluppo della leadership su misura. Processi di assessment e feedback 360. Workshop esperienziali progettati attorno a sfide reali del business. Percorsi più lunghi (3–6 mesi) per un cambiamento di comportamento duraturo.</div>
+          </div>
+          <button class="exp-q" id="exp-q-2b" aria-expanded="false" aria-controls="exp-a-2b">
+            A chi è rivolto
+            <span class="exp-q-icon" aria-hidden="true"></span>
+          </button>
+          <div class="exp-ans" id="exp-a-2b" role="region" aria-labelledby="exp-q-2b" hidden>
+            <div class="exp-ans-inner">Aziende che hanno bisogno che il loro livello manageriale cresca insieme al business. Organizzazioni che investono nello sviluppo della prossima generazione di dirigenti. HR leader che costruiscono da zero un'architettura di sviluppo della leadership.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-cell">
+        <div class="exp-n">03</div>
+        <h3>Cultura e Cambiamento</h3>
+        <p>La cultura è ciò che le persone fanno davvero, non quello che c'è scritto sulle pareti. Aiuto le organizzazioni a capire il divario tra i valori dichiarati e i comportamenti quotidiani — e a colmarlo deliberatamente.</p>
+        <div class="exp-more">
+          <button class="exp-q" id="exp-q-3a" aria-expanded="false" aria-controls="exp-a-3a">
+            Come si traduce nella pratica
+            <span class="exp-q-icon" aria-hidden="true"></span>
+          </button>
+          <div class="exp-ans" id="exp-a-3a" role="region" aria-labelledby="exp-q-3a" hidden>
+            <div class="exp-ans-inner">Diagnosi culturale e ascolto organizzativo. Progettazione e supporto all'implementazione del change management. Sviluppo di comportamenti di leadership che rinforzino la cultura di cui il business ha bisogno. Aiutare i leader a capire che il cambiamento culturale inizia da loro.</div>
+          </div>
+          <button class="exp-q" id="exp-q-3b" aria-expanded="false" aria-controls="exp-a-3b">
+            A chi è rivolto
+            <span class="exp-q-icon" aria-hidden="true"></span>
+          </button>
+          <div class="exp-ans" id="exp-a-3b" role="region" aria-labelledby="exp-q-3b" hidden>
+            <div class="exp-ans-inner">Aziende che attraversano trasformazioni in cui la cultura è un rischio noto. Organizzazioni in cui la performance si è appiattita senza un'evidente ragione operativa. Leader che percepiscono che qualcosa nel "come lavoriamo" deve cambiare, ma non riescono a definire esattamente cosa.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-cell">
+        <div class="exp-n">04</div>
+        <h3>Executive Coaching &amp; Advisory</h3>
+        <p>Uno spazio di pensiero per i dirigenti che affrontano decisioni complesse, transizioni e sfide di leadership — quelle che non entrano nell'agenda di una riunione.</p>
+        <div class="exp-more">
+          <button class="exp-q" id="exp-q-4a" aria-expanded="false" aria-controls="exp-a-4a">
+            Come si traduce nella pratica
+            <span class="exp-q-icon" aria-hidden="true"></span>
+          </button>
+          <div class="exp-ans" id="exp-a-4a" role="region" aria-labelledby="exp-q-4a" hidden>
+            <div class="exp-ans-inner">Coaching individuale per leader C-suite e dirigenti ad alto potenziale. Supporto durante transizioni di ruolo e nuovi mandati. Advisory in tempo reale durante momenti di svolta strategica. Shadow coaching e supporto in contesto per chi vuole lavorare su sfide reali e live.</div>
+          </div>
+          <button class="exp-q" id="exp-q-4b" aria-expanded="false" aria-controls="exp-a-4b">
+            A chi è rivolto
+            <span class="exp-q-icon" aria-hidden="true"></span>
+          </button>
+          <div class="exp-ans" id="exp-a-4b" role="region" aria-labelledby="exp-q-4b" hidden>
+            <div class="exp-ans-inner">Leader efficaci che vogliono essere più consapevoli di come guidano. Dirigenti che affrontano decisioni caratterizzate da incertezza, priorità in conflitto o posta in gioco personale alta. Organizzazioni che investono nello sviluppo di specifici individui chiave.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- METODO -->
+<section id="approach" class="sec">
+  <div class="wrap">
+    <div class="appr-grid">
+      <div class="appr-img rv">
+        <img src="../assets/img/approach.jpg" alt="Sessione di lavoro" loading="lazy">
+      </div>
+      <div class="appr-content rv rv-d2">
+        <span class="label">Come lavoro</span>
+        <h2 style="color:var(--white); margin-bottom:1.25rem;">Prima la diagnosi, poi la cura.</h2>
+        <p>Ogni progetto inizia con la comprensione della situazione reale — non il problema presentato, ma il sistema che ci sta dietro. Cosa sta davvero limitando la performance qui?</p>
+        <div class="steps" style="margin-top:2rem;">
+          <div class="step">
+            <span class="step-n">01</span>
+            <div class="step-body">
+              <strong>Diagnosticare</strong>
+              <span>Comprendere il sistema — di cosa ha bisogno l'organizzazione, dove sono i veri vincoli e quali interventi faranno davvero la differenza.</span>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-n">02</span>
+            <div class="step-body">
+              <strong>Allineare</strong>
+              <span>Costruire chiarezza condivisa a livello di leadership su priorità, aspettative e definizione del successo. Il disallineamento in cima rende meno efficace qualsiasi intervento.</span>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-n">03</span>
+            <div class="step-body">
+              <strong>Attivare</strong>
+              <span>Progettare e realizzare interventi mirati — coaching, programmi, cambiamenti strutturali — specifici per questa organizzazione e per questo momento.</span>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-n">04</span>
+            <div class="step-body">
+              <strong>Consolidare</strong>
+              <span>Radicare il cambiamento. Sviluppare capacità interna perché la performance non dipenda dalla presenza del consulente.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHI SONO -->
+<section id="about" class="sec sec-alt">
+  <div class="wrap">
+    <div class="abt-grid">
+      <div class="abt-img rv">
+        <img src="../assets/img/about.jpg" alt="Fede Fernandez Olivero" loading="lazy">
+      </div>
+      <div class="abt-content rv rv-d2">
+        <span class="label">Chi sono</span>
+        <h2 style="color:var(--white);">Lavoro con le persone.<br>Ma penso per sistemi.</h2>
+        <p class="abt-subtitle">Consulente in sviluppo organizzativo, executive coach e advisor di leadership.</p>
+        <p>Ho visto le sfide organizzative da angolazioni diverse: come professionista HR, consulente, coach e docente universitario. Quella combinazione — comprensione organizzativa, realtà del business e dinamiche umane della leadership — è la lente che porto in ogni progetto.</p>
+        <p>Basato a Milano, lavoro in Europa e America Latina, con esperienza che si estende anche al Nord America. I miei clienti sono tipicamente aziende che navigano crescita, trasformazione o complessità — e i leader responsabili di far funzionare quelle transizioni.</p>
+        <p>Lavoro in inglese, spagnolo e italiano. Quello che cerco in un cliente: una sfida organizzativa genuina, la disponibilità a guardare il sistema con onestà e un team di leadership pronto a cambiare quello che va cambiato.</p>
+        <div class="creds">
+          <div class="cred"><div class="cred-dash" aria-hidden="true"></div><span>15+ anni tra HR, consulenza e executive coaching</span></div>
+          <div class="cred"><div class="cred-dash" aria-hidden="true"></div><span>Formazione in coaching accreditata ICF (Programma Livello 2)</span></div>
+          <div class="cred"><div class="cred-dash" aria-hidden="true"></div><span>Disney Institute — Leadership Excellence</span></div>
+          <div class="cred"><div class="cred-dash" aria-hidden="true"></div><span>Inglese, spagnolo e italiano</span></div>
+          <div class="cred"><div class="cred-dash" aria-hidden="true"></div><span>Europa, America Latina e Nord America</span></div>
+          <div class="cred"><div class="cred-dash" aria-hidden="true"></div><span>Esperienza aziendale, consulenziale e accademica</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="sec">
+  <div class="wrap">
+    <div class="nl-editorial rv">
+      <div class="nl-left">
+        <span class="label">Newsletter su LinkedIn</span>
+        <h2>Leadership Espresso.<br>Idee che vale la pena pensare.</h2>
+        <p>Riflessioni brevi su leadership, sviluppo organizzativo e il lato umano del business. Scritte per mettere in discussione i luoghi comuni, generare domande migliori e, di tanto in tanto, farti sorridere.</p>
+        <p>Pubblicata su LinkedIn. Nessun abbonamento richiesto.</p>
+        <a href="https://www.linkedin.com/newsletters/leadership-espresso-7467886751018213377/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-top:.5rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          Scopri Leadership Espresso
+        </a>
+      </div>
+      <div class="nl-right rv rv-d2">
+        <div class="nl-pub-label">Leadership Espresso · Newsletter su LinkedIn</div>
+        <div class="nl-title">Idee sulle organizzazioni<br>e le persone che le <em>guidano</em>.</div>
+        <p class="nl-desc">La maggior parte dei contenuti sulla leadership ti dice quello che già sai, con parole nuove. Questa newsletter prova qualcosa di diverso: osservazioni specifiche, domande oneste e qualche insight che cambia come vedi un problema che pensavi di conoscere.</p>
+        <a href="https://www.linkedin.com/newsletters/leadership-espresso-7467886751018213377/" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+          Scopri Leadership Espresso
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATTI -->
+<section id="contact" class="sec sec-alt">
+  <div class="wrap">
+    <div class="ct-grid">
+      <div class="rv">
+        <span class="label">Parliamoci</span>
+        <h2 style="color:var(--white); margin-bottom:1.25rem;">Vale la pena questa conversazione?</h2>
+        <p>Se stai affrontando una sfida organizzativa all'intersezione tra strategia, leadership e cultura — probabilmente sì. Non cerco di vendere un progetto. Cerco di capire la situazione e vedere se sono la persona giusta per aiutare.</p>
+        <div class="ct-channels" style="margin-top:2rem;">
+          <a href="mailto:fede@fedefernandezolivero.com" class="ct-ch">
+            <div class="ct-ch-ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="ct-ch-l">Email</div>
+              <div class="ct-ch-v">fede@fedefernandezolivero.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/fedefernandezolivero/" target="_blank" rel="noopener noreferrer" class="ct-ch">
+            <div class="ct-ch-ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="var(--accent)"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="ct-ch-l">LinkedIn</div>
+              <div class="ct-ch-v">fedefernandezolivero</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="rv rv-d2">
+        <div class="ct-book">
+          <p>A volte il punto di partenza migliore è una call di 30 minuti. Raccontami cosa stai affrontando e vediamo se posso essere d'aiuto.</p>
+          <a href="https://calendar.app.google/ytrUcxttoiVHuxEVA" target="_blank" rel="noopener noreferrer" class="btn btn-solid" style="font-size:.9375rem; padding:.85rem 2rem;">
+            Prenota una call
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft-inner">
+      <a href="/it/" class="ft-logo" aria-label="Fede Fernandez Olivero — home">
+        <img src="../assets/img/logo-full-white.png" alt="FFO" width="104" height="26">
+      </a>
+      <p class="ft-copy">© 2026 Fede Fernandez Olivero · Milano, Italia</p>
+      <nav class="ft-links" aria-label="Link nel footer">
+        <a href="mailto:fede@fedefernandezolivero.com">Email</a>
+        <a href="https://www.linkedin.com/in/fedefernandezolivero/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.linkedin.com/newsletters/leadership-espresso-7467886751018213377/" target="_blank" rel="noopener noreferrer">Newsletter</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+document.body.classList.add('js-ready');
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 50), { passive: true });
+document.querySelectorAll('.exp-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const panelId = btn.getAttribute('aria-controls');
+    const panel = document.getElementById(panelId);
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.closest('.exp-cell').querySelectorAll('.exp-q').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      const p = document.getElementById(b.getAttribute('aria-controls'));
+      if (p) p.hidden = true;
+    });
+    if (!expanded) { btn.setAttribute('aria-expanded', 'true'); panel.hidden = false; }
+  });
+  btn.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); } });
+});
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.07, rootMargin: '0px 0px -36px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll('.rv').forEach(el => el.classList.add('in'));
+}
+</script>
+</body>
+</html>
