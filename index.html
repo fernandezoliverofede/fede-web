@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fede Fernández Olivero — Organizational Design & Leadership Development</title>
+  <meta name="description" content="I help CEOs and HR leaders build organizations that perform by design. Strategy, leadership, and culture — aligned and executed.">
+  <meta name="author" content="Fede Fernández Olivero">
+  <link rel="canonical" href="https://www.fedefernandezolivero.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.fedefernandezolivero.com/">
+  <meta property="og:title" content="Fede Fernández Olivero — Organizational Design & Leadership Development">
+  <meta property="og:description" content="I help CEOs and HR leaders build organizations that perform by design.">
+  <meta property="og:image" content="https://www.fedefernandezolivero.com/assets/img/hero.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fede Fernández Olivero",
+    "jobTitle": "Organizational Design & Leadership Development Consultant",
+    "url": "https://www.fedefernandezolivero.com",
+    "email": "fede@fedefernandezolivero.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Milan", "addressCountry": "IT" },
+    "sameAs": ["https://www.linkedin.com/in/fedefernandezolivero/"]
+  }
+  </script>
+
+  <style>
+    /* ─── TOKENS ──────────────────────────────────────────── */
+    :root {
+      --bg:          #06090f;
+      --bg-2:        #0c1018;
+      --bg-card:     #111620;
+      --border:      rgba(255,255,255,0.07);
+      --border-mid:  rgba(255,255,255,0.12);
+      --text:        #e8edf5;
+      --text-mid:    #9aa3b2;
+      --text-soft:   #5c6475;
+      --cyan:        #32b4cd;
+      --blue:        #3d6fe0;
+      --grad:        linear-gradient(130deg, #32b4cd 0%, #3d6fe0 100%);
+      --grad-r:      linear-gradient(130deg, #3d6fe0 0%, #32b4cd 100%);
+      --white:       #ffffff;
+      --radius-sm:   6px;
+      --radius:      12px;
+      --radius-lg:   20px;
+      --font-head:   'Sora', sans-serif;
+      --font-body:   'Inter', sans-serif;
+      --font-mono:   'JetBrains Mono', monospace;
+      --ease:        cubic-bezier(0.4, 0, 0.2, 1);
+      --nav-h:       72px;
+    }
+
+    /* ─── RESET ───────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; -webkit-font-smoothing: antialiased; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-body); line-height: 1.6; overflow-x: hidden; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; border: none; background: none; cursor: pointer; }
+    ul { list-style: none; }
+
+    /* ─── TYPOGRAPHY ─────────────────────────────────────── */
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--cyan);
+    }
+    h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; font-weight: 600; }
+    h1 { font-size: clamp(2.6rem, 5.5vw, 5rem); letter-spacing: -0.03em; font-weight: 700; }
+    h2 { font-size: clamp(1.9rem, 3.5vw, 3rem); letter-spacing: -0.025em; }
+    h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); letter-spacing: -0.01em; }
+
+    p { color: var(--text-mid); font-size: 1.0625rem; line-height: 1.75; }
+    p.large { font-size: clamp(1.1rem, 1.8vw, 1.35rem); line-height: 1.7; }
+
+    /* ─── UTILITIES ──────────────────────────────────────── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3rem); }
+    .container-wide { max-width: 1400px; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3rem); }
+    .section { padding: clamp(5rem, 10vw, 9rem) 0; }
+    .section-tight { padding: clamp(3rem, 6vw, 5rem) 0; }
+
+    .grad-text {
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .grad-line {
+      display: inline-block;
+      height: 2px;
+      width: 40px;
+      background: var(--grad);
+      border-radius: 2px;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+
+    /* ─── BUTTONS ────────────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 0.75rem 1.75rem;
+      font-family: var(--font-head); font-size: 0.9rem; font-weight: 500;
+      border-radius: 50px;
+      transition: all 0.25s var(--ease);
+    }
+    .btn-primary {
+      background: var(--grad);
+      color: #fff;
+    }
+    .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); box-shadow: 0 8px 28px rgba(50,180,205,0.28); }
+    .btn-ghost {
+      border: 1px solid var(--border-mid);
+      color: var(--text);
+    }
+    .btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); transform: translateY(-1px); }
+
+    /* ─── NAV ────────────────────────────────────────────── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h);
+      display: flex; align-items: center;
+      transition: background 0.3s, border-color 0.3s;
+    }
+    #nav.scrolled {
+      background: rgba(6,9,15,0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      width: 100%;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo img { height: 36px; width: auto; }
+    .nav-links {
+      display: flex; align-items: center; gap: 2rem;
+      font-size: 0.875rem; color: var(--text-mid);
+    }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta { display: flex; align-items: center; gap: 1rem; }
+    .nav-cta .btn { padding: 0.6rem 1.4rem; font-size: 0.85rem; }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+    }
+
+    /* ─── HERO ───────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex; align-items: flex-end;
+      overflow: hidden;
+      padding-bottom: clamp(3rem, 6vw, 5rem);
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: var(--bg);
+    }
+    .hero-img {
+      position: absolute; inset: 0;
+      background-image: url('assets/img/hero.jpg');
+      background-size: cover;
+      background-position: center 20%;
+    }
+    /* gradient overlay — right side is photo, left side fades to dark */
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(6,9,15,0.97) 0%,
+        rgba(6,9,15,0.88) 35%,
+        rgba(6,9,15,0.55) 60%,
+        rgba(6,9,15,0.3) 100%
+      );
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 720px;
+      padding-top: var(--nav-h);
+    }
+    .hero-eyebrow {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 1.75rem;
+    }
+    .hero-location {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      color: var(--text-soft);
+      text-transform: uppercase;
+    }
+    .hero-dot {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--cyan);
+    }
+    #hero h1 {
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    #hero h1 em {
+      font-style: normal;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+      color: rgba(232,237,245,0.75);
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+    .hero-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .hero-scroll {
+      position: absolute; bottom: 2rem; right: 3rem;
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      z-index: 2;
+    }
+    .hero-scroll span {
+      font-family: var(--font-mono); font-size: 0.65rem;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--text-soft);
+      writing-mode: vertical-rl;
+    }
+    .scroll-line {
+      width: 1px; height: 48px;
+      background: linear-gradient(to bottom, var(--cyan), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.3; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(1.15); }
+    }
+
+    /* ─── TICKER ─────────────────────────────────────────── */
+    .ticker-wrap {
+      overflow: hidden;
+      padding: 1.1rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-2);
+    }
+    .ticker-track {
+      display: flex; gap: 0;
+      animation: tickerMove 28s linear infinite;
+      white-space: nowrap;
+    }
+    .ticker-track:hover { animation-play-state: paused; }
+    .ticker-item {
+      display: inline-flex; align-items: center; gap: 1.5rem;
+      padding-right: 3rem;
+      font-family: var(--font-mono); font-size: 0.72rem;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--text-soft);
+    }
+    .ticker-item .sep {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--cyan);
+      flex-shrink: 0;
+    }
+    @keyframes tickerMove { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* ─── PERSPECTIVE ────────────────────────────────────── */
+    #perspective {
+      background: var(--bg);
+    }
+    .perspective-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: center;
+    }
+    .perspective-left .eyebrow { margin-bottom: 1.5rem; }
+    .perspective-left h2 { margin-bottom: 1.5rem; color: var(--white); }
+    .perspective-left p { margin-bottom: 1.25rem; }
+    .perspective-right {}
+    .stat-stack { display: flex; flex-direction: column; gap: 1.5rem; }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .stat-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--grad);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s var(--ease);
+    }
+    .stat-card:hover::before { transform: scaleX(1); }
+    .stat-num {
+      font-family: var(--font-head);
+      font-size: 2.5rem; font-weight: 700;
+      line-height: 1;
+      background: var(--grad);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      margin-bottom: 0.4rem;
+    }
+    .stat-label { font-size: 0.875rem; color: var(--text-mid); }
+
+    @media (max-width: 800px) {
+      .perspective-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ─── EXPERTISE ──────────────────────────────────────── */
+    #expertise { background: var(--bg-2); }
+    .expertise-header { text-align: center; max-width: 640px; margin: 0 auto 4rem; }
+    .expertise-header .eyebrow { margin-bottom: 1rem; }
+    .expertise-header h2 { color: var(--white); margin-bottom: 1rem; }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5px;
+      background: var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .exp-card {
+      background: var(--bg-card);
+      padding: clamp(2rem, 4vw, 3rem);
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s var(--ease);
+      cursor: default;
+    }
+    .exp-card:hover { background: #141924; }
+    .exp-num {
+      font-family: var(--font-mono); font-size: 0.7rem;
+      color: var(--text-soft); letter-spacing: 0.08em;
+      margin-bottom: 1.5rem;
+    }
+    .exp-icon {
+      width: 48px; height: 48px;
+      border-radius: var(--radius-sm);
+      background: rgba(50,180,205,0.08);
+      border: 1px solid rgba(50,180,205,0.15);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.5rem;
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .exp-card:hover .exp-icon {
+      background: rgba(50,180,205,0.14);
+      border-color: rgba(50,180,205,0.3);
+    }
+    .exp-icon svg { width: 22px; height: 22px; stroke: var(--cyan); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .exp-card h3 { color: var(--white); margin-bottom: 0.875rem; }
+    .exp-card p { font-size: 0.9375rem; margin-bottom: 1.5rem; }
+    .exp-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .exp-tag {
+      font-family: var(--font-mono); font-size: 0.66rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--text-soft);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 0.3rem 0.75rem;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .exp-card:hover .exp-tag { border-color: rgba(50,180,205,0.25); color: var(--text-mid); }
+
+    /* Accordion within expertise */
+    .exp-accordion { margin-top: 1.5rem; border-top: 1px solid var(--border); }
+    .acc-item { border-bottom: 1px solid var(--border); }
+    .acc-trigger {
+      width: 100%; display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 0;
+      font-family: var(--font-head); font-size: 0.875rem; font-weight: 500;
+      color: var(--text-mid); text-align: left;
+      transition: color 0.2s;
+    }
+    .acc-trigger:hover { color: var(--text); }
+    .acc-trigger.open { color: var(--cyan); }
+    .acc-arrow {
+      width: 16px; height: 16px;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.3s var(--ease);
+    }
+    .acc-trigger.open .acc-arrow { transform: rotate(45deg); }
+    .acc-arrow svg { width: 8px; height: 8px; stroke: currentColor; fill: none; stroke-width: 2; }
+    .acc-body {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s var(--ease), opacity 0.3s;
+      opacity: 0;
+    }
+    .acc-body.open { max-height: 300px; opacity: 1; }
+    .acc-body-inner { padding-bottom: 1rem; font-size: 0.875rem; color: var(--text-mid); line-height: 1.7; }
+
+    @media (max-width: 768px) {
+      .expertise-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ─── APPROACH ───────────────────────────────────────── */
+    #approach { background: var(--bg); }
+    .approach-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: center;
+    }
+    .approach-img-wrap {
+      position: relative;
+    }
+    .approach-img-wrap img {
+      width: 100%; border-radius: var(--radius-lg);
+      aspect-ratio: 4/3; object-fit: cover;
+    }
+    .approach-img-badge {
+      position: absolute;
+      bottom: -1.5rem; right: -1.5rem;
+      background: var(--grad);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      font-family: var(--font-head);
+      box-shadow: 0 16px 48px rgba(50,180,205,0.25);
+    }
+    .approach-img-badge .badge-num {
+      font-size: 2rem; font-weight: 700; line-height: 1;
+    }
+    .approach-img-badge .badge-label {
+      font-size: 0.75rem; opacity: 0.85; margin-top: 2px;
+    }
+    .approach-content .eyebrow { margin-bottom: 1.25rem; }
+    .approach-content h2 { color: var(--white); margin-bottom: 1.5rem; }
+    .approach-content > p { margin-bottom: 2rem; }
+    .approach-steps { display: flex; flex-direction: column; gap: 1.25rem; }
+    .approach-step { display: flex; gap: 1.25rem; align-items: flex-start; }
+    .step-num {
+      font-family: var(--font-mono); font-size: 0.7rem;
+      color: var(--cyan); letter-spacing: 0.06em;
+      margin-top: 0.2rem; flex-shrink: 0; width: 2.5rem;
+    }
+    .step-text {}
+    .step-text strong {
+      display: block; font-family: var(--font-head); font-size: 0.975rem;
+      color: var(--text); margin-bottom: 0.25rem;
+    }
+    .step-text span { font-size: 0.875rem; color: var(--text-mid); }
+
+    @media (max-width: 800px) {
+      .approach-grid { grid-template-columns: 1fr; }
+      .approach-img-badge { bottom: -1rem; right: 1rem; }
+    }
+
+    /* ─── ABOUT ──────────────────────────────────────────── */
+    #about { background: var(--bg-2); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: center;
+    }
+    .about-img-wrap { position: relative; }
+    .about-img-wrap img {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      aspect-ratio: 3/4; object-fit: cover; object-position: top;
+    }
+    .about-img-frame {
+      position: absolute;
+      top: -1rem; left: -1rem; right: 1rem; bottom: 1rem;
+      border: 1px solid var(--border-mid);
+      border-radius: var(--radius-lg);
+      z-index: -1;
+    }
+    .about-content .eyebrow { margin-bottom: 1.25rem; }
+    .about-content h2 { color: var(--white); margin-bottom: 0.5rem; }
+    .about-tagline {
+      font-family: var(--font-head);
+      font-size: clamp(1rem, 1.8vw, 1.25rem);
+      color: var(--text-mid); font-weight: 300;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+    .about-content p { margin-bottom: 1.25rem; }
+    .about-creds {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;
+      margin-top: 2rem;
+    }
+    .cred-item {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      padding: 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .cred-dot {
+      width: 6px; height: 6px; flex-shrink: 0; margin-top: 4px;
+      border-radius: 50%;
+      background: var(--grad);
+    }
+    .cred-text { font-size: 0.8125rem; color: var(--text-mid); line-height: 1.5; }
+
+    @media (max-width: 800px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .about-creds { grid-template-columns: 1fr; }
+    }
+
+    /* ─── INSIGHTS / LEADERSHIP ESPRESSO ────────────────── */
+    #insights { background: var(--bg); }
+    .insights-header {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      margin-bottom: 3rem; flex-wrap: wrap; gap: 1.5rem;
+    }
+    .insights-header h2 { color: var(--white); }
+    .insights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .insight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: transform 0.3s var(--ease), border-color 0.3s;
+    }
+    .insight-card:hover { transform: translateY(-4px); border-color: var(--border-mid); }
+    .insight-img {
+      aspect-ratio: 16/9; background: var(--bg-2);
+      overflow: hidden;
+    }
+    .insight-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
+    .insight-card:hover .insight-img img { transform: scale(1.04); }
+    .insight-body { padding: 1.5rem; }
+    .insight-tag {
+      font-family: var(--font-mono); font-size: 0.66rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--cyan); margin-bottom: 0.75rem; display: block;
+    }
+    .insight-body h3 { font-size: 1.05rem; color: var(--white); margin-bottom: 0.625rem; line-height: 1.4; }
+    .insight-body p { font-size: 0.875rem; margin-bottom: 1.25rem; }
+    .insight-link {
+      font-family: var(--font-head); font-size: 0.8125rem; font-weight: 500;
+      color: var(--cyan);
+      display: flex; align-items: center; gap: 6px;
+      transition: gap 0.2s;
+    }
+    .insight-link:hover { gap: 10px; }
+    .insight-coming {
+      display: flex; align-items: center; justify-content: center;
+      aspect-ratio: 1/1;
+      background: var(--bg-card);
+      border: 1px dashed var(--border-mid);
+      border-radius: var(--radius-lg);
+      text-align: center; padding: 2rem;
+    }
+    .insight-coming-inner {}
+    .insight-coming-icon {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: rgba(50,180,205,0.08);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .insight-coming-icon svg { width: 20px; height: 20px; stroke: var(--cyan); fill: none; stroke-width: 1.5; }
+    .insight-coming p { font-size: 0.875rem; color: var(--text-soft); }
+
+    @media (max-width: 900px) { .insights-grid { grid-template-columns: 1fr; } }
+    @media (min-width: 901px) and (max-width: 1100px) { .insights-grid { grid-template-columns: 1fr 1fr; } }
+
+    /* ─── DIVIDER QUOTE ──────────────────────────────────── */
+    .quote-band {
+      background: var(--bg-2);
+      padding: clamp(3.5rem, 7vw, 6rem) 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .quote-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+    .quote-mark {
+      font-family: var(--font-head); font-size: 5rem; line-height: 0.5;
+      color: var(--cyan); opacity: 0.25; margin-bottom: 1rem; display: block;
+    }
+    blockquote {
+      font-family: var(--font-head);
+      font-size: clamp(1.3rem, 2.5vw, 2rem);
+      font-weight: 400; color: var(--white);
+      line-height: 1.5; letter-spacing: -0.01em;
+    }
+    blockquote em { font-style: normal; color: var(--cyan); }
+
+    /* ─── CONTACT ────────────────────────────────────────── */
+    #contact { background: var(--bg); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: start;
+    }
+    .contact-left .eyebrow { margin-bottom: 1.25rem; }
+    .contact-left h2 { color: var(--white); margin-bottom: 1.25rem; }
+    .contact-left p { margin-bottom: 2rem; }
+    .contact-channels { display: flex; flex-direction: column; gap: 1rem; }
+    .contact-channel {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .contact-channel:hover { border-color: var(--border-mid); transform: translateX(4px); }
+    .contact-channel-icon {
+      width: 40px; height: 40px; flex-shrink: 0;
+      border-radius: var(--radius-sm);
+      background: rgba(50,180,205,0.08);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .contact-channel-icon svg { width: 18px; height: 18px; stroke: var(--cyan); fill: none; stroke-width: 1.5; }
+    .contact-channel-label { font-size: 0.75rem; color: var(--text-soft); margin-bottom: 2px; }
+    .contact-channel-val { font-size: 0.9rem; color: var(--text); font-weight: 500; }
+
+    .contact-form { display: flex; flex-direction: column; gap: 1.25rem; }
+    .form-group {}
+    .form-label { display: block; font-size: 0.8125rem; color: var(--text-mid); margin-bottom: 0.5rem; }
+    .form-input, .form-textarea {
+      width: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.875rem 1.25rem;
+      color: var(--text);
+      font-family: var(--font-body); font-size: 0.9375rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .form-input::placeholder, .form-textarea::placeholder { color: var(--text-soft); }
+    .form-input:focus, .form-textarea:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 3px rgba(50,180,205,0.12);
+    }
+    .form-textarea { resize: vertical; min-height: 140px; }
+    .form-submit { align-self: flex-start; }
+
+    @media (max-width: 800px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+    #footer {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 0;
+    }
+    .footer-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1.5rem;
+    }
+    .footer-logo img { height: 28px; opacity: 0.7; }
+    .footer-copy { font-size: 0.8125rem; color: var(--text-soft); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-size: 0.8125rem; color: var(--text-soft); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--text-mid); }
+
+    /* ─── SCROLL REVEAL ──────────────────────────────────── */
+    .rv {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .rv.visible { opacity: 1; transform: none; }
+    .rv-delay-1 { transition-delay: 0.1s; }
+    .rv-delay-2 { transition-delay: 0.2s; }
+    .rv-delay-3 { transition-delay: 0.3s; }
+    .rv-delay-4 { transition-delay: 0.4s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .rv { opacity: 1; transform: none; transition: none; }
+      .ticker-track { animation: none; }
+      .scroll-line { animation: none; }
+    }
+
+    /* ─── SKIP LINK ──────────────────────────────────────── */
+    .skip-link {
+      position: fixed; top: -100%; left: 1rem; z-index: 9999;
+      background: var(--grad); color: #fff;
+      padding: 0.75rem 1.5rem; border-radius: 0 0 var(--radius) var(--radius);
+      font-size: 0.875rem; font-weight: 500;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
+  </style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ── NAV ─────────────────────────────────────────────── -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo" aria-label="Fede Fernández Olivero — home">
+      <img src="assets/img/logo-full-white.png" alt="FFO" width="140" height="36">
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#insights">Insights</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://www.linkedin.com/in/fedefernandezolivero/" target="_blank" rel="noopener" class="btn btn-ghost" aria-label="Connect on LinkedIn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="#contact" class="btn btn-primary">Let's talk</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────────── -->
+<main id="main">
+<section id="hero" aria-label="Introduction">
+  <div class="hero-bg"></div>
+  <div class="hero-img" role="img" aria-label="Fede Fernández Olivero"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-eyebrow">
+      <span class="hero-location">Milan, Italy</span>
+      <span class="hero-dot" aria-hidden="true"></span>
+      <span class="eyebrow">Organizational Design</span>
+    </div>
+    <h1>Better organizations.<br><em>By design.</em></h1>
+    <p class="hero-sub">I help CEOs and HR leaders build organizations that are aligned, capable, and built to perform — not by accident, but by design.</p>
+    <div class="hero-actions">
+      <a href="#expertise" class="btn btn-primary">
+        Explore my work
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+      </a>
+      <a href="#about" class="btn btn-ghost">My approach</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ── TICKER ────────────────────────────────────────────── -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    <!-- Two identical sets for seamless loop -->
+    <span class="ticker-item">Organizational Design <span class="sep"></span></span>
+    <span class="ticker-item">Leadership Development <span class="sep"></span></span>
+    <span class="ticker-item">Culture Transformation <span class="sep"></span></span>
+    <span class="ticker-item">Executive Coaching <span class="sep"></span></span>
+    <span class="ticker-item">Performance Systems <span class="sep"></span></span>
+    <span class="ticker-item">Learning & Capability <span class="sep"></span></span>
+    <span class="ticker-item">Strategic Alignment <span class="sep"></span></span>
+    <span class="ticker-item">Team Effectiveness <span class="sep"></span></span>
+    <span class="ticker-item">Organizational Design <span class="sep"></span></span>
+    <span class="ticker-item">Leadership Development <span class="sep"></span></span>
+    <span class="ticker-item">Culture Transformation <span class="sep"></span></span>
+    <span class="ticker-item">Executive Coaching <span class="sep"></span></span>
+    <span class="ticker-item">Performance Systems <span class="sep"></span></span>
+    <span class="ticker-item">Learning & Capability <span class="sep"></span></span>
+    <span class="ticker-item">Strategic Alignment <span class="sep"></span></span>
+    <span class="ticker-item">Team Effectiveness <span class="sep"></span></span>
+  </div>
+</div>
+
+<!-- ── PERSPECTIVE ───────────────────────────────────────── -->
+<section id="perspective" class="section">
+  <div class="container">
+    <div class="perspective-grid">
+      <div class="perspective-left rv">
+        <span class="eyebrow">Perspective</span>
+        <h2>Performance is not accidental.<br><span class="grad-text">It's architected.</span></h2>
+        <p class="large">Most organizations don't underperform because of a lack of talent. They underperform because strategy, culture, and people systems work in silos instead of as one.</p>
+        <p>I work at the intersection of business and people — helping organizations close the gap between where they are and where they could be, by designing the conditions for performance.</p>
+        <p>My work starts with a system-level view. And it ends with measurable change at the individual, team, and organizational level.</p>
+      </div>
+      <div class="perspective-right rv rv-delay-2">
+        <div class="stat-stack">
+          <div class="stat-card">
+            <div class="stat-num">15+</div>
+            <div class="stat-label">Years working with leaders and organizations across Europe and Latin America</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Core practice areas — leadership, culture, coaching, and capability building</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Languages: Spanish, English, Italian — for truly international work</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERTISE ─────────────────────────────────────────── -->
+<section id="expertise" class="section">
+  <div class="container">
+    <div class="expertise-header rv">
+      <span class="eyebrow">Expertise</span>
+      <h2>Four areas. <span class="grad-text">One system.</span></h2>
+      <p>Each practice area connects to the others. Strategy without leadership is theory. Leadership without culture is fragile. I design interventions that work together.</p>
+    </div>
+    <div class="expertise-grid">
+
+      <!-- Card 1: Leadership Experience Design -->
+      <div class="exp-card rv">
+        <div class="exp-num">01</div>
+        <div class="exp-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Leadership Experience Design</h3>
+        <p>We design leadership experiences that transform how leaders think, decide, and lead — beyond training, into genuine behavior change.</p>
+        <div class="exp-tags">
+          <span class="exp-tag">Custom programs</span>
+          <span class="exp-tag">Experiential workshops</span>
+          <span class="exp-tag">360° feedback</span>
+          <span class="exp-tag">Leadership journeys</span>
+        </div>
+        <div class="exp-accordion">
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false">It starts with a realization<span class="acc-arrow" aria-hidden="true"><svg viewBox="0 0 8 8"><line x1="4" y1="1" x2="4" y2="7"/><line x1="1" y1="4" x2="7" y2="4"/></svg></span></button>
+            <div class="acc-body"><div class="acc-body-inner">Most leaders were promoted because of what they do — not because of how they lead. And at some point, what made them successful stops being enough.</div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false">Where mindset meets behavior<span class="acc-arrow" aria-hidden="true"><svg viewBox="0 0 8 8"><line x1="4" y1="1" x2="4" y2="7"/><line x1="1" y1="4" x2="7" y2="4"/></svg></span></button>
+            <div class="acc-body"><div class="acc-body-inner">Leadership is not a set of tools. It's a way of thinking, deciding, and showing up. Our approach works at that level — where real transformation happens.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Performance & Culture -->
+      <div class="exp-card rv rv-delay-1">
+        <div class="exp-num">02</div>
+        <div class="exp-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Performance &amp; Culture Transformation</h3>
+        <p>We turn strategy into everyday behaviors that drive performance — making the invisible visible, and the intentional executable.</p>
+        <div class="exp-tags">
+          <span class="exp-tag">Culture frameworks</span>
+          <span class="exp-tag">Accountability systems</span>
+          <span class="exp-tag">Change initiatives</span>
+          <span class="exp-tag">Team effectiveness</span>
+        </div>
+        <div class="exp-accordion">
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false">Culture is what people do<span class="acc-arrow" aria-hidden="true"><svg viewBox="0 0 8 8"><line x1="4" y1="1" x2="4" y2="7"/><line x1="1" y1="4" x2="7" y2="4"/></svg></span></button>
+            <div class="acc-body"><div class="acc-body-inner">Not what's written on the wall. Not what's said in town halls. Culture is built in daily decisions, conversations, and what leaders tolerate or reinforce.</div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false">Turning intention into execution<span class="acc-arrow" aria-hidden="true"><svg viewBox="0 0 8 8"><line x1="4" y1="1" x2="4" y2="7"/><line x1="1" y1="4" x2="7" y2="4"/></svg></span></button>
+            <div class="acc-body"><div class="acc-body-inner">Real transformation happens when clarity meets accountability. When people know what's expected — and feel responsible for delivering on it, every day.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Executive Coaching -->
+      <div class="exp-card rv rv-delay-2">
+        <div class="exp-num">03</div>
+        <div class="exp-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Executive Coaching</h3>
+        <p>We create the space where leaders think better, decide better, and lead better — a space they rarely have inside fast-paced organizations.</p>
+        <div class="exp-tags">
+          <span class="exp-tag">1:1 coaching</span>
+          <span class="exp-tag">Role transitions</span>
+          <span class="exp-tag">Strategic thinking</span>
+          <span class="exp-tag">Shadow coaching</span>
+        </div>
+        <div class="exp-accordion">
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false">A space leaders rarely have<span class="acc-arrow" aria-hidden="true"><svg viewBox="0 0 8 8"><line x1="4" y1="1" x2="4" y2="7"/><line x1="1" y1="4" x2="7" y2="4"/></svg></span></button>
+            <div class="acc-body"><div class="acc-body-inner">Time to think. To step back. To question. In fast-paced environments, this space doesn't exist — and yet, it's where the best decisions are made.</div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false">From reflection to action<span class="acc-arrow" aria-hidden="true"><svg viewBox="0 0 8 8"><line x1="4" y1="1" x2="4" y2="7"/><line x1="1" y1="4" x2="7" y2="4"/></svg></span></button>
+            <div class="acc-body"><div class="acc-body-inner">Coaching is not about staying in conversation. It's about translating clarity into action — in real situations, with real consequences.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Learning & Capability -->
+      <div class="exp-card rv rv-delay-3">
+        <div class="exp-num">04</div>
+        <div class="exp-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3>Learning &amp; Capability Programs</h3>
+        <p>We build skills that translate into real performance — designing programs that bridge the gap between knowing and consistently doing.</p>
+        <div class="exp-tags">
+          <span class="exp-tag">Feedback & influence</span>
+          <span class="exp-tag">Corporate academies</span>
+          <span class="exp-tag">Train-the-trainer</span>
+          <span class="exp-tag">Blended learning</span>
+        </div>
+        <div class="exp-accordion">
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false">Learning that sticks<span class="acc-arrow" aria-hidden="true"><svg viewBox="0 0 8 8"><line x1="4" y1="1" x2="4" y2="7"/><line x1="1" y1="4" x2="7" y2="4"/></svg></span></button>
+            <div class="acc-body"><div class="acc-body-inner">Real learning happens when people apply, experiment, and reflect — not just when they listen. We design for behavior change, not content delivery.</div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false">Building capabilities that last<span class="acc-arrow" aria-hidden="true"><svg viewBox="0 0 8 8"><line x1="4" y1="1" x2="4" y2="7"/><line x1="1" y1="4" x2="7" y2="4"/></svg></span></button>
+            <div class="acc-body"><div class="acc-body-inner">True capability is not what people know. It's what they consistently do — under pressure, in complexity, and over time.</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /expertise-grid -->
+  </div>
+</section>
+
+<!-- ── APPROACH ───────────────────────────────────────────── -->
+<section id="approach" class="section">
+  <div class="container">
+    <div class="approach-grid">
+      <div class="approach-img-wrap rv">
+        <img src="assets/img/approach.jpg" alt="Strategic work session" loading="lazy">
+        <div class="approach-img-badge">
+          <div class="badge-num">4</div>
+          <div class="badge-label">Phase process</div>
+        </div>
+      </div>
+      <div class="approach-content rv rv-delay-2">
+        <span class="eyebrow">How I work</span>
+        <h2>Diagnosis before<br><span class="grad-text">prescription.</span></h2>
+        <p>Every intervention begins with understanding. Not assumptions. I work alongside leadership teams to diagnose the real challenges before designing any solution.</p>
+        <div class="approach-steps">
+          <div class="approach-step">
+            <span class="step-num">01</span>
+            <div class="step-text">
+              <strong>Diagnose</strong>
+              <span>Understand the system — culture, leadership, strategy, and the gaps between them.</span>
+            </div>
+          </div>
+          <div class="approach-step">
+            <span class="step-num">02</span>
+            <div class="step-text">
+              <strong>Align</strong>
+              <span>Build shared clarity across leadership on direction, priorities, and expectations.</span>
+            </div>
+          </div>
+          <div class="approach-step">
+            <span class="step-num">03</span>
+            <div class="step-text">
+              <strong>Activate</strong>
+              <span>Design and deliver targeted interventions — programs, coaching, processes, workshops.</span>
+            </div>
+          </div>
+          <div class="approach-step">
+            <span class="step-num">04</span>
+            <div class="step-text">
+              <strong>Sustain</strong>
+              <span>Embed the change. Build internal capability so performance outlasts the engagement.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ──────────────────────────────────────────────── -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap rv">
+        <img src="assets/img/about.jpg" alt="Fede Fernández Olivero" loading="lazy">
+        <div class="about-img-frame" aria-hidden="true"></div>
+      </div>
+      <div class="about-content rv rv-delay-2">
+        <span class="eyebrow">About</span>
+        <h2>I work with people.<br>But I think in systems.</h2>
+        <p class="about-tagline">Organizational consultant, executive coach, and strategic partner to CEOs and HR leaders.</p>
+        <p>I've spent 15+ years at the intersection of business performance and people development. My work spans executive coaching, organizational design, leadership development, and cultural transformation — across industries and continents.</p>
+        <p>Based in Milan, I work with companies navigating growth, change, and complexity. What drives me is the belief that organizations don't perform below their potential because of bad luck — they do it because of misaligned systems. And systems can be redesigned.</p>
+        <p>I bring a business-first lens to HR and a human-centered lens to strategy. That's the combination my clients find rare — and valuable.</p>
+        <div class="about-creds">
+          <div class="cred-item">
+            <div class="cred-dot" aria-hidden="true"></div>
+            <span class="cred-text">ICF Certified Executive Coach (ACC)</span>
+          </div>
+          <div class="cred-item">
+            <div class="cred-dot" aria-hidden="true"></div>
+            <span class="cred-text">Organizational Development practitioner</span>
+          </div>
+          <div class="cred-item">
+            <div class="cred-dot" aria-hidden="true"></div>
+            <span class="cred-text">15+ years in leadership & HR consulting</span>
+          </div>
+          <div class="cred-item">
+            <div class="cred-dot" aria-hidden="true"></div>
+            <span class="cred-text">Multilingual: Spanish, English, Italian</span>
+          </div>
+          <div class="cred-item">
+            <div class="cred-dot" aria-hidden="true"></div>
+            <span class="cred-text">Based in Milan, active across Europe</span>
+          </div>
+          <div class="cred-item">
+            <div class="cred-dot" aria-hidden="true"></div>
+            <span class="cred-text">Podcast: Leadership Espresso</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── QUOTE BAND ─────────────────────────────────────────── -->
+<div class="quote-band">
+  <div class="container">
+    <div class="quote-inner rv">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <blockquote>
+        Organizations don't fail because of <em>bad people</em>.<br>
+        They fail because of <em>misaligned systems</em>.
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<!-- ── INSIGHTS ───────────────────────────────────────────── -->
+<section id="insights" class="section">
+  <div class="container">
+    <div class="insights-header">
+      <div class="rv">
+        <span class="eyebrow">Leadership Espresso</span>
+        <h2>Ideas worth <span class="grad-text">chewing on.</span></h2>
+      </div>
+      <a href="https://www.linkedin.com/in/fedefernandezolivero/" target="_blank" rel="noopener" class="btn btn-ghost rv rv-delay-2">
+        Follow on LinkedIn
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </div>
+    <div class="insights-grid">
+      <div class="insight-card rv">
+        <div class="insight-img">
+          <img src="assets/img/approach.jpg" alt="Leadership insight" loading="lazy">
+        </div>
+        <div class="insight-body">
+          <span class="insight-tag">Leadership</span>
+          <h3>Why most leadership programs don't stick — and what to do instead</h3>
+          <p>The problem isn't the content. It's the design. Most programs optimize for learning, not for change.</p>
+          <a href="https://www.linkedin.com/in/fedefernandezolivero/" target="_blank" rel="noopener" class="insight-link">
+            Read on LinkedIn
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="insight-card rv rv-delay-1">
+        <div class="insight-img">
+          <img src="assets/img/hero.jpg" alt="Culture insight" loading="lazy">
+        </div>
+        <div class="insight-body">
+          <span class="insight-tag">Culture</span>
+          <h3>Culture doesn't change because you say so — it changes because leaders do</h3>
+          <p>Every culture initiative I've seen fail had one thing in common: leadership was exempt from the change.</p>
+          <a href="https://www.linkedin.com/in/fedefernandezolivero/" target="_blank" rel="noopener" class="insight-link">
+            Read on LinkedIn
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="insight-coming rv rv-delay-2">
+        <div class="insight-coming-inner">
+          <div class="insight-coming-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 4v6l4 2"/></svg>
+          </div>
+          <p>More insights coming soon.<br>Follow on LinkedIn for weekly ideas on leadership and organizational performance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────────── -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left rv">
+        <span class="eyebrow">Let's talk</span>
+        <h2>Ready to build a<br><span class="grad-text">better organization?</span></h2>
+        <p>Whether you're navigating a transformation, building leadership capability, or rethinking your culture — I'd like to hear about it. Let's start with a conversation.</p>
+        <div class="contact-channels">
+          <a href="mailto:fede@fedefernandezolivero.com" class="contact-channel">
+            <div class="contact-channel-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel-label">Email</div>
+              <div class="contact-channel-val">fede@fedefernandezolivero.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/fedefernandezolivero/" target="_blank" rel="noopener" class="contact-channel">
+            <div class="contact-channel-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="contact-channel-label">LinkedIn</div>
+              <div class="contact-channel-val">fedefernandezolivero</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form rv rv-delay-2" name="contact" method="POST" data-netlify="true" action="mailto:fede@fedefernandezolivero.com" enctype="text/plain">
+        <div class="form-group">
+          <label class="form-label" for="name">Your name</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Jane Doe" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email address</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="company">Company / Role <span style="color:var(--text-soft)">(optional)</span></label>
+          <input class="form-input" type="text" id="company" name="company" placeholder="ACME Corp, HR Director">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">What's on your mind?</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Tell me about your challenge or what you'd like to explore..." required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary">
+            Send message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a href="/" class="footer-logo" aria-label="Fede Fernández Olivero — home">
+        <img src="assets/img/logo-full-white.png" alt="FFO" width="110" height="28">
+      </a>
+      <p class="footer-copy">© 2024 Fede Fernández Olivero · Milan, Italy</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="mailto:fede@fedefernandezolivero.com">Email</a>
+        <a href="https://www.linkedin.com/in/fedefernandezolivero/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── NAV SCROLL ──────────────────────────────────────────
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 60);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ── ACCORDION ───────────────────────────────────────────
+  document.querySelectorAll('.acc-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item = trigger.closest('.acc-item');
+      const body = item.querySelector('.acc-body');
+      const isOpen = trigger.classList.contains('open');
+      // Close all in this card
+      const card = trigger.closest('.exp-card');
+      card.querySelectorAll('.acc-trigger').forEach(t => {
+        t.classList.remove('open');
+        t.setAttribute('aria-expanded', 'false');
+        t.closest('.acc-item').querySelector('.acc-body').classList.remove('open');
+      });
+      if (!isOpen) {
+        trigger.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+        body.classList.add('open');
+      }
+    });
+  });
+
+  // ── SCROLL REVEAL ────────────────────────────────────────
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -48px 0px' });
+    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+  } else {
+    document.querySelectorAll('.rv').forEach(el => el.classList.add('visible'));
+  }
+
+  // ── CONTACT FORM ─────────────────────────────────────────
+  // Fallback: open mailto if form submission doesn't work on static host
+  document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    // If action is mailto (static site without form backend), let browser handle it
+    // Otherwise form works natively
+  });
+</script>
+
+</body>
+</html>
